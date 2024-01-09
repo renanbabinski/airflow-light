@@ -23,4 +23,10 @@ To shutdown:
 
     docker-compose down
 
-    
+## OBS
+
+### Arch Linux
+
+If you updated you kernel, you must reboot your PC first:
+
+https://bbs.archlinux.org/viewtopic.php?id=284089
