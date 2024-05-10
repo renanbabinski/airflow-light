@@ -9,10 +9,12 @@ RUN apt-get update -qq && apt-get install -y python3-pip
 
 COPY requirements.txt .
 
+USER airflow
 RUN python3 -m pip install --upgrade pip
 
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
 
+USER root
 COPY scripts scripts
 RUN chmod +x scripts
 
